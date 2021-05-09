@@ -22,11 +22,21 @@
   - triggered by a message from IoT hub
     - the message points to the blob in the blob storage
   - Pods (many) with machine learning models in python (pods can run python apps)
-    - they send the identified anomalies to the event hub
+    - they send the identified anomaly reports to the event hub
 
 - Event hub
-  - contains the 
+  - contains the anomaly reports for the technitians
+  - collected by consumers
 
- 
- 
- 
+- Redis cache
+  - provides caching of anomaly reports for the consumers
+
+- 3rd party REST API 
+  - provides mapping of devices to technitians
+  - unreliable - needs caching
+
+- Consumers
+  - partitioned application that consumes the reports - we need to repeatedly ask the REST API
+
+- Notification hub
+  - sends reports with identified devices to the technicians
