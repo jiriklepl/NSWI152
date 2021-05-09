@@ -25,7 +25,7 @@
     - they send the identified anomaly reports to the event hub
 
 - Event hub
-  - contains the anomaly reports for the technitians
+  - contains the anomaly reports for the technicians
   - collected by consumers
 
 - Redis cache
