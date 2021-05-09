@@ -29,7 +29,7 @@
   - collected by consumers
 
 - Redis cache
-  - provides caching of anomaly reports for the consumers
+  - provides caching of mapping of technicians to devices, for the "consumers" module
 
 - 3rd party REST API 
   - provides mapping of devices to technicians
@@ -37,6 +37,7 @@
 
 - Consumers
   - partitioned application that consumes the reports - we need to repeatedly ask the REST API
+  - simple app written by the cloud platform team
 
 - Notification hub
   - sends reports with identified devices to the technicians
