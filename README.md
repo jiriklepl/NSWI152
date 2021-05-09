@@ -32,7 +32,7 @@
   - provides caching of anomaly reports for the consumers
 
 - 3rd party REST API 
-  - provides mapping of devices to technitians
+  - provides mapping of devices to technicians
   - unreliable - needs caching
 
 - Consumers
