@@ -1,4 +1,4 @@
-## Mechanical machine
+## Mechanical machine (possibly around 100'000 in count)
 
 - Components
   - generate log streams in various rates - we want to collect them with 0% loss rate (this is assured by the event hub)
